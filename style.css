@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cherry+Bomb+One&family=Fredoka:wght@300..700&family=Sofadi+One&family=Sour+Gummy:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #cdc4fd;
+    overflow-x: hidden;
+    padding-top: 70px;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #3F2986;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(45, 20, 90, 0.3);
+}
+
+.logo {
+    color: white;
+    font-family: 'Allura', cursive;
+    font-size: clamp(25px, 4vw, 40px);
+}
+
+body > h1 {
+    font-family: 'Allura', cursive;
+    font-size: clamp(70px, 12vw, 140px);
+    color: #3F2986;
+    text-align: center;
+    margin: 50px auto 30px;
+    text-shadow: 1px 1px 2px rgba(255, 253, 253, 0.55);
+}
+
+.icones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto 30px;
+    flex-wrap: wrap;
+}
+
+.elemento {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(
+        circle at center,
+        #8f6bd1 30%,
+        #5a2eaa 70%,
+        #3d167d 100%
+    );
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.elemento h1 {
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .55);
+}
+
+.elemento h2 {
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 75px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .55);
+}
+
+.elemento h3 {
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.elemento h4 {
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.rutenio {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+body > p {
+    width: min(90%, 800px);
+    margin: 0 auto 70px;
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    text-align: center;
+}
+
+a {
+    color: #5a2eaa;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 80px;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 5px dotted #2d2449;
+    transform: translateX(-50%);
+}
+
+.um h5,
+.dois h5,
+.tres h5,
+.quatro h5,
+.cinco h5,
+.seis h5 {
+    width: 100%;
+    margin: 0 0 20px;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: clamp(27px, 3vw, 35px);
+    font-weight: 300;
+    color: #3F2986;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgba(45, 20, 90, .3);
+}
+
+.um,
+.dois,
+.tres,
+.quatro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parUm,
+.parDois,
+.parTres {
+    width: 100%;
+}
+
+.parUm p,
+.parDois p,
+.parTres p {
+    width: 100% !important;
+    position: static !important;
+    margin: 0 0 15px;
+    font-family: 'Sofadi One', cursive;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.um img,
+.dois img,
+.tres img {
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 15px auto;
+}
+
+.um img {
+    width: 300px;
+    height: 250px;
+    margin-top: 40px;
+}
+
+.dois img {
+    width: 300px;
+    height: 250px;
+}
+
+.tres img {
+    width: 300px;
+    height: 300px;
+}
+
+.um > p,
+.dois > p,
+.tres > p {
+    width: 100% !important;
+    position: static !important;
+    margin: 5px auto 0;
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.quatro table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Sofadi One', cursive;
+    font-size: 15px;
+}
+
+.quatro th,
+.quatro td {
+    border: 3px solid #3F2986;
+    padding: 9px 12px;
+    text-align: left;
+}
+
+.quatro th {
+    background-color: #8f6bd1;
+    color: white;
+    text-align: center;
+}
+
+.quatro td {
+    font-weight: 900;
+}
+
+.cinco,
+.seis {
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parCinco,
+.parSeis {
+    width: 100%;
+    margin: 0;
+}
+
+.parCinco h6,
+.parSeis h6 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: #3F2986;
+}
+
+.parCinco h6 i,
+.parSeis h6 i {
+    margin-right: 8px;
+    color: #ffcb0f;
+    text-shadow: 1px 1px 2px rgba(45, 20, 90, .3);
+}
+
+.parCinco p,
+.parSeis p {
+    width: 100% !important;
+    position: static !important;
+    margin: 0 0 15px;
+    font-family: 'Sofadi One', cursive;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.cinco img,
+.seis img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+.cinco > p,
+.seis > p {
+    width: 100% !important;
+    position: static !important;
+    margin: 5px auto 15px;
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.fontes {
+    width: 350px;
+    min-height: 180px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #8c79cc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 2px 3px 8px rgba(45, 20, 90, .3);
+}
+
+.fontes h5 {
+    width: 100%;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 35px;
+    font-weight: 300;
+    color: #3F2986;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.fontes a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5741a8;
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(45, 20, 90, .3);
+    transition: .2s;
+}
+
+.fontes a:hover {
+    background-color: #49368c;
+    transform: scale(1.1);
+}
+
+.rodape {
+    width: 100%;
+    background-color: #3F2986;
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    box-shadow: 0 -5px 15px rgba(63, 41, 134, .2);
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.grupo h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(227, 198, 255, .25);
+    padding: 20px 40px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.professores {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(227, 198, 255, .25);
+    padding: 20px 40px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.perfil img,
+.prof img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 233, 162);
+    flex-shrink: 0;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dados p {
+    width: auto !important;
+    position: static !important;
+    margin: 0 !important;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .container {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .container::before {
+
+        display: none;
+    }
+
+    .um,
+    .dois,
+    .tres,
+    .quatro,
+    .cinco,
+    .seis {
+
+        width: 100%;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+
+    .parUm p,
+    .parDois p,
+    .parTres p,
+    .parCinco p,
+    .parSeis p {
+
+        font-size: 15px;
+    }
+
+    .quatro table {
+
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding-top: 60px;
+    }
+
+
+    /* NAV */
+
+    .navbar {
+
+        height: 60px;
+
+        padding: 0 15px;
+    }
+
+    .logo {
+
+        font-size: 22px;
+    }
+
+
+    /* TÍTULO */
+
+    body > h1 {
+
+        font-size: 65px;
+
+        margin: 35px 15px 25px;
+
+        line-height: 1;
+    }
+
+
+    /* ELEMENTO */
+
+    .icones {
+
+        gap: 15px;
+
+        padding: 0 15px;
+    }
+
+    .elemento,
+    .rutenio {
+
+        width: 145px;
+
+        height: 145px;
+    }
+
+    .elemento h1 {
+
+        font-size: 28px;
+
+        top: 7px;
+
+        left: 12px;
+    }
+
+    .elemento h2 {
+
+        font-size: 58px;
+    }
+
+    .elemento h3 {
+
+        font-size: 18px;
+    }
+
+    .elemento h4 {
+
+        font-size: 13px;
+    }
+
+
+    /* FONTE */
+
+    body > p {
+
+        width: 90%;
+
+        font-size: 9px;
+
+        margin-bottom: 50px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .container {
+
+        width: 90%;
+
+        gap: 50px;
+    }
+
+
+    /* TÍTULOS */
+
+    .um h5,
+    .dois h5,
+    .tres h5,
+    .quatro h5,
+    .cinco h5,
+    .seis h5 {
+
+        font-size: 27px;
+
+        line-height: 1.2;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* TEXTOS */
+
+    .parUm p,
+    .parDois p,
+    .parTres p,
+    .parCinco p,
+    .parSeis p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        text-indent: 20px;
+    }
+
+
+    /* IMAGENS */
+
+    .um img,
+    .cinco img,
+    .seis img {
+
+        width: min(300px, 90%);
+
+        height: auto;
+
+        aspect-ratio: 2 / 1;
+    }
+
+    .dois img {
+
+        width: 100px;
+
+        height: 180px;
+    }
+
+    .tres img {
+
+        width: 100px;
+
+        height: 130px;
+    }
+
+
+    /* TABELA */
+
+    .quatro {
+
+        overflow: hidden;
+    }
+
+    .quatro table {
+
+        width: 100%;
+
+        font-size: 11px;
+
+        table-layout: fixed;
+    }
+
+    .quatro th,
+    .quatro td {
+
+        padding: 7px 4px;
+
+        word-break: break-word;
+    }
+
+
+    /* FONTES */
+
+    .fontes {
+
+        width: 90%;
+
+        max-width: 350px;
+
+        margin: 50px auto;
+
+        padding: 20px;
+    }
+
+    .fontes h5 {
+
+        font-size: 30px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape {
+
+        padding: 40px 15px;
+
+        gap: 35px;
+    }
+
+    .grupo h2 {
+
+        font-size: 21px;
+    }
+
+    .perfil,
+    .prof {
+
+        width: 100%;
+
+        max-width: 350px;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    .dados {
+
+        align-items: center;
+    }
+
+    .dados p {
+
+        font-size: 15px;
+
+        text-align: center;
+    }
+
+    .perfil img,
+    .prof img {
+
+        width: 90px;
+
+        height: 90px;
+    }
+
+    .professores {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .logo {
+
+        font-size: 18px;
+    }
+
+    body > h1 {
+
+        font-size: 52px;
+    }
+
+    .elemento,
+    .rutenio {
+
+        width: 125px;
+
+        height: 125px;
+    }
+
+    .elemento h2 {
+
+        font-size: 50px;
+    }
+
+    .elemento h3 {
+
+        font-size: 16px;
+    }
+
+    .elemento h4 {
+
+        font-size: 12px;
+    }
+
+    .quatro table {
+
+        font-size: 9px;
+    }
+
+    .quatro th,
+    .quatro td {
+
+        padding: 5px 3px;
+    }
+}
